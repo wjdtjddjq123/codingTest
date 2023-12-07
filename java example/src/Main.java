@@ -1,39 +1,31 @@
-<<<<<<< Updated upstream
+
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-=======
-import java.io.*;
-import java.util.Locale;
->>>>>>> Stashed changes
+import java.util.StringTokenizer;
+
 
 public class Main {
         public static void main(String[] args) throws IOException {
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+          
+        for (int i = 0; i <arr.length; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
 
-<<<<<<< Updated upstream
-        int N = Integer.parseInt(br.readLine()); // 좌석갯수
-        String M = br.readLine();
-        String Str = "";
-        for (int i = 0; i < N; i++) {
-            if (M.charAt(i) == 'S') {
-                Str += "*S";
-            } else{
-                Str += "*LL";
-                i++;
-            }
         }
-        Str += "*";
+
+        int find = Integer.parseInt(br.readLine());
+
         int count = 0;
-        for (int i = 0; i < Str.length(); i++) {
-            if (Str.charAt(i) == '*') {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == find)
                 count++;
-            }
         }
-        count = Math.min(count,N);
         System.out.println(count);
+        br.close();
     }
-=======
+
             String str = br.readLine();
             StringBuilder sb = new StringBuilder();
             for(int i=0; i<str.length(); i++){
@@ -46,6 +38,5 @@ public class Main {
             }
             System.out.println(sb);
 
-        }
->>>>>>> Stashed changes
+
 }
