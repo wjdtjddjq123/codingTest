@@ -6,8 +6,8 @@ public class TV {
     void power(){ power = !power;}
     void channerUp() { channer++;}
     void channerDown(){ channer--;}
-
 }
+
 class CaptionTV extends TV{
     boolean caption;
     void displayCaption(String text){
